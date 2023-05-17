@@ -14,9 +14,7 @@ import java.io.IOException;
  * @author Allen Caingcoy
  */
 public class AccStorage {
-    private static final String fileloc = "G:" + File.separator + "Documents" + File.separator
-            + "NetBeans Projects" + File.separator + "login-validation" + File.separator + "src" + File.separator
-            + "rsc" + File.separator + "accs.txt";
+    private static final String fileloc = System.getProperty("java.io.tmpdir") + File.separator + "accs.txt";
 
     public static String getfilepath() {
         return fileloc;
